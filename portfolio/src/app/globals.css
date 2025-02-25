@@ -12,3 +12,21 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+/* Green Glow Effect */
+.glow-green {
+  box-shadow: 0 0 10px rgba(72, 187, 120, 0.7), 0 0 20px rgba(72, 187, 120, 0.5),
+    0 0 30px rgba(72, 187, 120, 0.3);
+}
+
+/* Green Glow Hover Effect */
+.glow-green-hover {
+  box-shadow: 0 0 15px rgba(72, 187, 120, 0.9), 0 0 25px rgba(72, 187, 120, 0.7),
+    0 0 35px rgba(72, 187, 120, 0.5);
+}
+
+/* Red Glow Effect for Errors */
+.glow-red {
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.7), 0 0 20px rgba(239, 68, 68, 0.5),
+    0 0 30px rgba(239, 68, 68, 0.3);
+}
