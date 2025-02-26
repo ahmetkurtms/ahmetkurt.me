@@ -5,11 +5,10 @@ import { VscVscodeInsiders } from "react-icons/vsc";
 import { Button } from "@/components/ui/button";
 
 const TechIcon = ({ icon: Icon, name }: { icon: React.ElementType; name: string }) => (
-  <div className="tech-icons group relative flex items-center justify-center p-4 bg-zinc-900 rounded-lg border border-green-500/20 hover:bg-zinc-800 hover:backdrop-blur-sm hover:brightness-75 transition-all duration-300">
-    <Icon className="w-12 h-12 text-green-500" />
+  <div className="tech-icons group relative flex items-center justify-center p-4 bg-zinc-900 rounded-lg border border-green-500/20 hover:bg-zinc-800 transition-all duration-300">
+    <Icon className="w-12 h-12 text-green-500 group-hover:scale-0 transition-transform duration-300" />
 
-    {/* Text Animation on Hover */}
-    <span className="absolute opacity-0 group-hover:opacity-100 text-sm text-white transition-opacity duration-300">
+    <span className="absolute text-sm text-white scale-0 group-hover:scale-100 transition-transform duration-300">
       {name}
     </span>
   </div>
