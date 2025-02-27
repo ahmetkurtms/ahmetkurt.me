@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 :root {
   color-scheme: dark;
@@ -13,24 +13,29 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* Green Glow Effect */
-.glow-green {
-  box-shadow: 0 0 10px rgba(72, 187, 120, 0.7), 0 0 20px rgba(72, 187, 120, 0.5),
-    0 0 30px rgba(72, 187, 120, 0.3);
+.animated-element {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Green Glow Hover Effect */
-.glow-green-hover {
-  box-shadow: 0 0 15px rgba(72, 187, 120, 0.9), 0 0 25px rgba(72, 187, 120, 0.7),
-    0 0 35px rgba(72, 187, 120, 0.5);
+.tech-icons,
+.contact-button,
+.social-icon {
+  @apply animated-element;
 }
 
-/* Red Glow Effect for Errors */
-.glow-red {
-  box-shadow: 0 0 10px rgba(239, 68, 68, 0.7), 0 0 20px rgba(239, 68, 68, 0.5),
-    0 0 30px rgba(239, 68, 68, 0.3);
+.tech-icons:hover {
+  transform: translateY(-2px);
 }
 
-.tech-icons {
-  transition: transform 0.3s ease;
+.contact-button:hover {
+  transform: translateY(-2px);
+}
+
+.social-icon:hover {
+  transform: rotate(8deg) scale(1.1);
+}
+
+.tech-icons span {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.025em;
 }
